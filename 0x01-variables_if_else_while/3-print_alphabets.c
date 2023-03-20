@@ -1,11 +1,11 @@
 #include <stdio.h>
 /**
  * main - Entry point
- *
  * Return: Always 0 (success)
  */
 
 int main(void)
+{
 
 	char c;
 
@@ -13,15 +13,16 @@ int main(void)
 
 	c = 'a';
 	d = 'A';
-	while
-	       (c <= 'Z'){
-		       putchar(c);
-		       c++;
-		}
-        while
-	        (d <= 'z'){
-			putchar(c);
-			d++;
-		}
-        putchar('\n');
-        return (0);
+	while (c <= 'z')
+	{
+		putchar(c);
+		c++;
+	}
+	while (d <= 'Z')
+	{
+		putchar(d);
+		d++;
+	}
+	putchar('\n');
+	return (0);
+}
