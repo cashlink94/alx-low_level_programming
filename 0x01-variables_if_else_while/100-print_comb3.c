@@ -10,15 +10,16 @@ int main(void)
 	int i;
 	int j;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i <= 9; i++)
 	{
-		for (j = i ; j < 10 ; j++)
+		for (j = i+1 ; j <= 9 ; j++)
 		{
-			if (i <j && ; i = j)
 			{
-				putchar(i = '0');
-				puchar(j ='0');
-				if (i=j i= 17)
+				putchar(i + '0');
+				putchar(j + '0');
+				if (i == 8 && j == 9)
+					putchar('\n');
+				else
 				{
 					putchar(',');
 					putchar(' ');
@@ -26,5 +27,5 @@ int main(void)
 			}
 		}
 	}
-	putchar('\n');
 	return (0);
+}
