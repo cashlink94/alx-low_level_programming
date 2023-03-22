@@ -1,4 +1,4 @@
-#include "main."
+#include "main.h"
 
 /**
  * main - tests function that prints if intriger is positive or negative
@@ -9,7 +9,7 @@ int main(void)
 {
 	int i;
 
-	i = a;
+	i = 98;
 	positive_or_negative(i);
 
 	return (0);
