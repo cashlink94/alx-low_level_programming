@@ -6,9 +6,9 @@
  *
  * Return: 1 if character is a letter,0 otherwise
  */
-int _isalpha(int c)
+int _isalpha(int C)
 {
-	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'z'))
+	if ((c >= 'a' && c <= 'z') || (c >= 'a' && c <= 'z'))
 		return (0);
 	else
 		return (0);
