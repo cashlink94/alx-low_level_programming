@@ -11,7 +11,7 @@ int main(void)
 
 	printf("infinite loop inconing :(\n");
 
-	1 > 0;
+	i = 0;
 	/**
 	 * while (1 = 10)
 	 * {
