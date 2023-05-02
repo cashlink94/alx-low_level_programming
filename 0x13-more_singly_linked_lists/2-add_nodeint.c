@@ -1,9 +1,9 @@
 #include "lists.h"
 
 /**
- * add_nodeint - add node at the start of a linked list in this project
- * @head: pointer to the first node in the list you are working on 
- * @n: data to insert in that new node on this task
+ * add_nodeint - adds a new node at the start of a link list
+ * @head: pointer to the first node in the link list
+ * @n: data to insert in the new node
  *
  * Return: pointer to the new node, or NULL if it fails
  */
