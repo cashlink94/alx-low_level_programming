@@ -1,8 +1,8 @@
 #include "lists.h"
 
 /**
- * erase_nodeint_at_index - erase a node in the linked list at a certain index
- * @head: pointer to the first element in the list
+ * delete_nodeint_at_index - erases a node in a link list at a certain index
+ * @head: pointer to the first element of the list
  * @index: index of the node to erase
  *
  * Return: 1 (Success), or -1 (Fail)
