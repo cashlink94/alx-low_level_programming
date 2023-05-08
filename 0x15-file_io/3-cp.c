@@ -8,13 +8,12 @@ char *create_buffer(char *file);
 /**
  * create_buffer - Allocates 1024 bytes for a buffer.
  * @file: The name of the file.
- * @argv: arguments vector.
  *
  * Return: pointer to the newly-allocated buffer.
  */
 char *create_buffer(char *file)
 {
-	char *buffer;
+	char *buffer
 
 	buffer = malloc(sizeof(char) * 1024);
 
