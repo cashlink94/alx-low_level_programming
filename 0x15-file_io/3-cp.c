@@ -2,18 +2,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void close_file(int fd);
 char *create_buffer(char *file);
+void close_file(int fd);
 
 /**
- * create_buffer - Allocates 1024 bytes for a buffer.
- * @file: The name of the file.
+ * create_buffer - Distribute 1024 bytes for a buffer.
+ * @file: The name of the file buffer is tinning chars.
  *
- * Return: pointer to the newly-allocated buffer.
+ * Return: pointer to the allocated buffer.
  */
 char *create_buffer(char *file)
 {
-	char *buffer
+	char *buffer;
 
 	buffer = malloc(sizeof(char) * 1024);
 
@@ -28,8 +28,8 @@ char *create_buffer(char *file)
 }
 
 /**
- * close_file - Closes files description.
- * @fd: The files descriptor to be closed.
+ * close_file - Closes open file descriptors.
+ * @fd: The file descriptor that needs to be closed.
  */
 void close_file(int fd)
 {
@@ -45,16 +45,20 @@ void close_file(int fd)
 }
 
 /**
- * main - transfers the contents of a file to another.
- * @argc: The numbers of arguments supplied.
- * @argv: pointers to the arguments.
+ * main - Duplicates the content of a file into another file.
+ * @argc: The count of arguments provided to the program.
+ * @argv: A pointer array to the arguments.
  *
  * Return: 0 on success.
  *
- * Description: If argument count is incorrect - exit code 97.
- * If file_from does not exist or cant be read - exit code 98.
- * If file_to cant be created or written to - exit code 99.
- * If file_to or file_from cant be closed - exit code 100.
+ * Description: In case of incorrect argument count, 
+ * the program will exit with error code 97.
+ * If the file specified in "file_from" does not exist or cannot be read, 
+ * the program will exit with error code 98.
+ * If the file specified in "file_to" cannot be created or written to, 
+ * the program will exit with error code 99.
+ * If the program cannot close either the "file_to" or "file_from" file, 
+ * it will exit with error code 100.
  */
 int main(int argc, char *argv[])
 {
